@@ -3,7 +3,7 @@ package com.subrat.array;
 import java.util.Scanner;
 
 /*
-Searching a element in sorted array using linear search.
+Searching a element in sorted array using binary search.
  */
 public class BinarySc {
     public static void main(String[] args) {
