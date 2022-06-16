@@ -1,7 +1,9 @@
 package com.subrat.array;
 
 import java.util.Scanner;
-
+/*
+Find pivot element of given array
+ */
 public class PivotIndex {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
