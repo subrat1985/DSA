@@ -1,5 +1,5 @@
 package com.subrat.array;
-
+//https://practice.geeksforgeeks.org/problems/rotate-array-by-n-elements-1587115621/1
 public class RotateArray {
     public static void main(String[] args) {
         int arr[]={1,2,3,4,5};
