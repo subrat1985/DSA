@@ -96,9 +96,93 @@ A B C D E F
             System.out.println();
         }
     }
+    /*
+          1
+        2 1
+      3 2 1
+    4 3 2 1
+  5 4 3 2 1
+6 5 4 3 2 1
+     */
+    public static void printPattern6(int n) {
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print("  ");
+            }
+            for (int j=i;j>=1;j--) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
+            }
+
+        }
+/*
+          A
+        B B
+      C C C
+    D D D D
+  E E E E E
+F F F F F F
+ */
+    public static void printPattern7(int n) {
+        char pr='A';
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print("  ");
+            }
+            for (int j=i;j>=1;j--) {
+                System.out.print(pr+ " ");
+            }
+            pr= (char) (pr+1);
+            System.out.println();
+        }
+
+    }
+    /*
+        5
+      5 4
+    5 4 3
+  5 4 3 2
+5 4 3 2 1
+     */
+    public static void printPattern8(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print("  ");
+            }
+            for (int j=n;j>=n-i+1;j--) {
+                System.out.print(j+ " ");
+            }
+            System.out.println();
+        }
+
+    }
+/*
+        E
+      E D
+    E D C
+  E D C B
+E D C B A
+ */
+    public static void printPattern9(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print("  ");
+            }
+            for (int j=n;j>=n-i+1;j--) {
+                char print= (char) (j+64);
+                System.out.print(print+ " ");
+            }
+
+            System.out.println();
+        }
+
+    }
+
 
 
     public static void main(String[] args) {
-        printPattern5(6);
+        printPattern9(5);
     }
 }

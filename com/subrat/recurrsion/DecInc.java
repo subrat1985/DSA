@@ -16,7 +16,7 @@ public class DecInc {
         if(n<1){
             return;
         }else {
-            dec(n-1);
+            inc(n-1);
             System.out.println(n);
         }
     }
